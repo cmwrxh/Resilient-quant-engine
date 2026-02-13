@@ -1,0 +1,5 @@
+[project]
+name = "resilient-quant-engine"
+version = "0.2.0"
+description = "Portfolio quant engine (trend + pairs + funding) with risk, execution safety, monitoring."
+requires-python = ">=3.10"
