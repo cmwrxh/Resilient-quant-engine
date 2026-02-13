@@ -1,0 +1,27 @@
+services:
+  rqe:
+    build:
+      context: .
+      dockerfile: docker/Dockerfile
+    env_file: .env
+    ports:
+      - "9108:9108"
+    volumes:
+      - ./rqe.sqlite:/app/rqe.sqlite
+    restart: unless-stopped
+
+  api:
+    image: golang:1.21
+    working_dir: /srv
+    volumes:
+      - ./api/go:/srv
+      - ./rqe.sqlite:/data/rqe.sqlite
+    environment:
+      - DB_PATH=/data/rqe.sqlite
+      - API_PORT=8080
+    command: bash -lc "go mod tidy && go run main.go"
+    ports:
+      - "8080:8080"
+    depends_on:
+      - rqe
+    restart: unless-stopped
