@@ -48,6 +48,14 @@ RQE runs multiple trading strategies within a controlled, observable, and risk-g
 
 > Default runtime mode = **Paper Trading**  
 > Live trading modules exist but are disabled until `MODE=live`.
+## 🧱 Architecture
+
+<p align="center">
+  <img src="assets/architecture-diagram.png" width="550"/>
+</p>
+
+RQE uses a layered control-plane architecture:
+
 
 ---
 
