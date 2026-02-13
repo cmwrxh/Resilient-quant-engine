@@ -22,6 +22,15 @@ Wrapped in:
 ## Quickstart (Paper)
 
 ```bash
+resilient-quant-engine
+ ├ rqe python engine
+ ├ go api
+ └ docker deploy
+
+rqe-mobile-app
+ ├ flutter UI
+ └ api client
+
 python -m venv .venv && source .venv/bin/activate
 pip install -r requirements.txt
 cp .env.example .env
