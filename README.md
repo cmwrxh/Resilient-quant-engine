@@ -29,6 +29,10 @@ resilient-quant-engine
 
 rqe-mobile-app
  ├ flutter UI
+RQE repo = Engine
+Go = Remote Control
+Flutter = Dashboard Screen
+ 
  └ api client
 
 python -m venv .venv && source .venv/bin/activate
