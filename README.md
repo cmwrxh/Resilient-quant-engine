@@ -1,4 +1,7 @@
 # resilient-quant-engine (RQE) — by @cmwrxh
+<p align="left">
+  <img src="assets/rqe-emblem.png" width="220"/>
+</p>
 
 A reliability-first crypto trading engine that runs a **portfolio of edges**:
 
