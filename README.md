@@ -51,7 +51,7 @@ RQE runs multiple trading strategies within a controlled, observable, and risk-g
 ## 🧱 Architecture
 
 <p align="center">
-  <img src="assets/architecture-diagram.png" width="550"/>
+  <img src="assets/architecture-diagram.png" width="450"/>
 </p>
 
 RQE uses a layered control-plane architecture:
